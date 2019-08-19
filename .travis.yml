@@ -1,8 +1,8 @@
 language: php
 php:
   - '7.3'
+install:
+  - composer install
 before_script:
   - echo 'test'
-script:
-  - composer install
-  - vendor/bin/phpunit
+script: vendor/bin/phpunit
